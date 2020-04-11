@@ -7,7 +7,7 @@ import {Product} from '../product';
   styleUrls: ['./price-display.component.css']
 })
 export class PriceDisplayComponent implements OnInit {
-  @Input() product: Product;
+  @Input() price: number;
   @HostBinding('attr.class') cssClass = 'ui small image';
   constructor() { }
 
