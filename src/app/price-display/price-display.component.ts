@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostBinding } from '@angular/core';
 import {Product} from '../product';
 
 @Component({
@@ -8,6 +8,7 @@ import {Product} from '../product';
 })
 export class PriceDisplayComponent implements OnInit {
   @Input() product: Product;
+  @HostBinding('attr.class') cssClass = 'ui small image';
   constructor() { }
 
   ngOnInit() {
